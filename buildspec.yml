@@ -12,17 +12,17 @@ phases:
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
         - apt install --no-install-recommends yarn
     
-    pre_build:
-      commands:
-        - echo Installing dependencies...
-        - yarn
-      # install dependencies
-    build:
-      commands:
-        - echo Testing..
-        - yarn test
-        - echo Building...
-        - yarn build
+  pre_build:
+    commands:
+      - echo Installing dependencies...
+      - yarn
+    # install dependencies
+  build:
+    commands:
+      - echo Testing..
+      - yarn test
+      - echo Building...
+      - yarn build
 
 artifacts:
   files:
