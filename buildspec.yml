@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+        - echo Running install phase
+      # install node
+      # install yarn
+    pre_build:
+      commands:
+        - echo Running pre_build phase
+      # install dependencies
+    build:
+      commands:
+        - echo Running build phase
+          # tests
+          # # build
+
